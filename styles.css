@@ -255,7 +255,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: fadeInUp 1s ease;
+    animation: fadeInUp 1s ease 3.5s both;
 }
 
 h2 {
@@ -1141,7 +1141,7 @@ textarea:focus {
 .projects-slider-container {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 50rem;
     margin: 2rem 0;
     perspective: 1000px;
     perspective-origin: center;
@@ -1207,7 +1207,7 @@ textarea:focus {
 .proyecto-content {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
-    padding: 2rem;
+    padding: 6rem;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
@@ -1270,7 +1270,7 @@ textarea:focus {
 
 .proyecto-content img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 1.5rem;

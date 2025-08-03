@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mostrar preloader
     const preloader = document.getElementById('preloader');
     
-    // Simular tiempo de carga
+    // Simular tiempo de carga - aumentado a 3.5 segundos
     setTimeout(() => {
         preloader.classList.add('hidden');
         setTimeout(() => {
             preloader.style.display = 'none';
         }, 500);
-    }, 2000);
+    }, 3500);
     
     initializeSlides();
     setupEventListeners();
@@ -1013,12 +1013,15 @@ document.querySelector('button[type="submit"]')?.addEventListener('click', funct
     console.log('Formulario enviado');
 });
 
-// Efecto de escritura para el título principal
+// Efecto de escritura para el título principal - sincronizado con el preloader
 window.addEventListener('load', function() {
     const titleElement = document.querySelector('#titulo-inicio');
     if (titleElement) {
-        const originalText = titleElement.textContent;
-        typeWriter(titleElement, originalText, 100);
+        // Esperar a que termine el preloader antes de iniciar la animación
+        setTimeout(() => {
+            const originalText = titleElement.textContent;
+            typeWriter(titleElement, originalText, 100);
+        }, 3500); // Sincronizado con el tiempo del preloader
     }
 });
 
