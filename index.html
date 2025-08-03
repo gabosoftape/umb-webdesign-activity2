@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de desarrollo web - Proyectos, habilidades y experiencia profesional">
+    <meta name="keywords" content="desarrollo web, portafolio, HTML5, CSS, JavaScript">
+    <meta name="author" content="Desarrollador Web">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <title>Dumar Pabon - Desarrollador Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="monkey-container">
+                <img src="assets/images/monkey.gif" alt="Monito cargando" class="monkey-loader">
+            </div>
+            <div class="loading-text">
+                <span>Cargando</span>
+                <span class="dots">...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skip link para accesibilidad -->
+    <a href="#slide-inicio" class="skip-link" data-es="Saltar al contenido principal" data-en="Skip to main content">Saltar al contenido principal</a>
+    
+    <!-- Selector de idioma -->
+    <div class="language-selector" role="region" aria-label="Selector de idioma">
+        <button class="lang-btn active" data-lang="es" aria-label="Cambiar a español" aria-pressed="true">
+            <span class="lang-text">ES</span>
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="Change to English" aria-pressed="false">
+            <span class="lang-text">EN</span>
+        </button>
+    </div>
+
+    <!-- Navegación de slides -->
+    <nav class="slide-navigation" role="navigation" aria-label="Navegación de slides">
+        <div class="nav-dots">
+            <button class="nav-dot active" data-slide="0" data-es-aria-label="Ir al slide 1 - Inicio" data-en-aria-label="Go to slide 1 - Home" aria-label="Ir al slide 1 - Inicio"></button>
+            <button class="nav-dot" data-slide="1" data-es-aria-label="Ir al slide 2 - Sobre Mí" data-en-aria-label="Go to slide 2 - About Me" aria-label="Ir al slide 2 - Sobre Mí"></button>
+            <button class="nav-dot" data-slide="2" data-es-aria-label="Ir al slide 3 - Proyectos" data-en-aria-label="Go to slide 3 - Projects" aria-label="Ir al slide 3 - Proyectos"></button>
+            <button class="nav-dot" data-slide="3" data-es-aria-label="Ir al slide 4 - Contacto" data-en-aria-label="Go to slide 4 - Contact" aria-label="Ir al slide 4 - Contacto"></button>
+        </div>
+        <div class="nav-arrows">
+            <button class="nav-arrow prev" data-es-aria-label="Slide anterior" data-en-aria-label="Previous slide" aria-label="Slide anterior">‹</button>
+            <button class="nav-arrow next" data-es-aria-label="Slide siguiente" data-en-aria-label="Next slide" aria-label="Slide siguiente">›</button>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal de slides -->
+    <div class="slides-container">
+        <!-- Slide 1: Inicio -->
+        <section class="slide active" id="slide-inicio" aria-labelledby="titulo-inicio">
+            <div class="slide-content">
+                <img src="assets/images/avatar.jpg" alt="Foto de perfil de Dumar Pabon" class="avatar">
+                <h1 id="titulo-inicio" data-es="¡Hola, soy Dumar Pabon!" data-en="Hi, I'm Dumar Pabon!">¡Hola, soy Dumar Pabon!</h1>
+                <h2 data-es="Mi vida es construir cosas con" data-en="My life is to build things with">
+                    <span data-es="Mi vida es construir cosas con" data-en="My life is to build things with">Mi vida es construir cosas con</span>
+                    <span data-en="CODE" class="code">{`{ Código }`}</span>
+                </h2>
+                <p class="description" data-es="Soy un Ingeniero de Software viviendo en Bogotá DC - Colombia. Mi trabajo es crear soluciones de negocio y experiencias convincentes, a través de la creatividad y habilidades de programación, siempre siguiendo las mejores prácticas y usando las tecnologías más modernas." data-en="I'm a Software Engineer living in Bogotá DC - Colombia. My job is to create business solutions and compelling experiences, through creativity and coding skills, always following the best practices and using the most modern technologies.">
+                    Soy un Ingeniero de Software viviendo en Bogotá DC - Colombia. Mi trabajo es crear soluciones de negocio y experiencias convincentes, a través de la creatividad y habilidades de programación, siempre siguiendo las mejores prácticas y usando las tecnologías más modernas.
+                </p>
+                
+                <div class="slide-indicator">
+                    <span>01</span>
+                    <div class="indicator-line"></div>
+                    <span data-es="Inicio" data-en="Home">Inicio</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Sobre Mí -->
+        <section class="slide" id="slide-sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <div class="slide-content">
+                <h2 id="titulo-sobre-mi" data-es="¿Quieres conocerme mejor?" data-en="Want to know me better?">¿Quieres conocerme mejor?</h2>
+                <article>
+                    <h3 data-es="¿Dumar quién?" data-en="Dumar who?">¿Dumar quién?</h3>
+                    <p data-es="Sí, soy un programador, pero más que eso, también soy padre, esposo, músico y a veces corredor. También puedes descubrir más sobre las cosas que hago y las tecnologías con las que he trabajado en los enlaces de abajo." data-en="Yeah, I am a coder alright, but more than that, I'm also a father, a husband, a musician, and sometimes a runner. You can also find out more about things that I do and the techs that I've been working with on the links below.">
+                        Sí, soy un programador, pero más que eso, también soy padre, esposo, músico y a veces corredor. También puedes descubrir más sobre las cosas que hago y las tecnologías con las que he trabajado en los enlaces de abajo.
+                    </p>
+                    
+                    <h3 data-es="Mi Experiencia" data-en="My Experience">Mi Experiencia</h3>
+                    <p data-es="Programando desde 2012, me considero un ingeniero Fullstack con fuerte enfoque en desarrollo frontend. Tengo 13 años de experiencia profesional trabajando con varias tecnologías web y móviles, la mayoría relacionadas con el ecosistema JavaScript." data-en="Coding since 2012, I consider myself to be a Fullstack engineer with strong focus on frontend development. I have 13 years of professional experience dealing with various web and mobile technologies, most of them related to the JavaScript ecosystem.">
+                        Programando desde 2012, me considero un ingeniero Fullstack con fuerte enfoque en desarrollo frontend. Tengo 13 años de experiencia profesional trabajando con varias tecnologías web y móviles, la mayoría relacionadas con el ecosistema JavaScript.
+                    </p>
+                    
+                    <p data-es="Además, también soy un solucionador de problemas, aprendiz rápido y un profesional extremadamente dedicado. Profundamente comprometido a aportar valor a sus empleadores." data-en="In addition, I'm also a Problem solver, quick learner and an extremely dedicated professional. Deeply committed to bringing value to its employers.">
+                        Además, también soy un solucionador de problemas, aprendiz rápido y un profesional extremadamente dedicado. Profundamente comprometido a aportar valor a sus empleadores.
+                    </p>
+                    
+                    <h3 data-es="Mis Habilidades" data-en="My Skills">Mis Habilidades</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Nest.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Symfony</span>
+                        <span class="skill-tag">Golang</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Sass</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Material-UI</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Terragrunt</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">WebGL</span>
+                        <span class="skill-tag">WebAssembly</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">NgRx</span>
+                        <span class="skill-tag">RxJS</span>
+                        <span class="skill-tag">Axios</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">Cypress</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">Vite</span>
+                        <span class="skill-tag">Yarn</span>
+                        <span class="skill-tag">npm</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe XD</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Vim</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Zsh</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">MacOS</span>
+                        <span class="skill-tag">Windows</span>
+                    </div>
+                </article>
+                <div class="slide-indicator">
+                    <span>02</span>
+                    <div class="indicator-line"></div>
+                    <span data-es="Sobre Mí" data-en="About Me">Sobre Mí</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Proyectos -->
+        <section class="slide" id="slide-proyectos" aria-labelledby="titulo-proyectos">
+            <div class="slide-content">
+                <h2 id="titulo-proyectos" data-es="Revisa algunos de mis trabajos" data-en="Check out some of my work">Revisa algunos de mis trabajos</h2>
+                
+                <p class="description" data-es="Aprendiendo" data-en="Learning">
+                    <span class="code">&nbsp;==&nbsp;</span>
+                    <span data-es="Descubrimiento" data-en="Discovery">Descubrimiento</span>
+                    <span class="code">&nbsp;&amp;&amp;&nbsp;</span>
+                    <span data-es="Diversión!" data-en="Fun!">Diversión!</span>
+                </p>
+                
+                <p class="description" data-es="La práctica es la mejor manera de dominar una habilidad, y no hay forma de ser bueno en algo si no te metes en la suciedad. Por eso me considero afortunado: simplemente me encanta practicar! Para mí, nada es más emocionante que iniciar un nuevo proyecto y jugar con nuevas tecnologías y herramientas." data-en="Practicing is the best way to master a skill, and there's no way to get good at something if you don't get your hands dirty. That's why I consider myself lucky: I just love to practice! For me, nothing is more exciting than to start a new project and to tinker around with new technologies and tools.">
+                    La práctica es la mejor manera de dominar una habilidad, y no hay forma de ser bueno en algo si no te metes en la suciedad. Por eso me considero afortunado: simplemente me encanta practicar! Para mí, nada es más emocionante que iniciar un nuevo proyecto y jugar con nuevas tecnologías y herramientas.
+                </p>
+                
+                <div class="projects-slider-container">
+                    <div class="projects-slider" id="projectsSlider">
+                        <article class="proyecto-slide active" data-project="0">
+                            <div class="proyecto-content">
+                                <h3 data-es="Mi Tracking" data-en="Mi Tracking">Mi Tracking</h3>
+                                <img src="assets/images/mitracking/007_mockup_seguimiento-gps_web.png" alt="Captura de pantalla del proyecto Mi Tracking - Sistema de seguimiento GPS">
+                                <p data-es="Plataforma para el seguimiento GPS y IoT. Consta del sistema de seguimiento MITRACKING por satélite y el sistema MIPORTAL de gestión." data-en="Platform for GPS and IoT tracking. It consists of the MITRACKING satellite tracking system and the MIPORTAL management system.">
+                                    Plataforma para el seguimiento GPS y IoT. Consta del sistema de seguimiento MITRACKING por satélite y el sistema MIPORTAL de gestión.
+                                </p>
+                                <p><strong>Technologies:</strong> React, Redux, Golang, MongoDB, PostgreSQL</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('mitracking')">
+                                        <img src="assets/images/mitracking/030_mockup_seguimiento-gps_web_login.png" alt="Login del sistema Mi Tracking">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('mitracking')">
+                                        <img src="assets/images/mitracking/031_mockup_seguimiento-gps_web_new-mapmods.png" alt="Mapa del sistema Mi Tracking">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('mitracking')">
+                                        <img src="assets/images/mitracking/032_mockup_seguimiento-gps_web_modal-new-unit.png" alt="Modal de nueva unidad">
+                                    </div>
+                                </div>
+                                
+                                <!-- Video del proyecto -->
+                                <div class="video-container">
+                                    <video poster="assets/images/mitracking/007_mockup_seguimiento-gps_web.png">
+                                        <source src="assets/videos/mitracking.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento video.
+                                    </video>
+                                    <div class="video-overlay">
+                                        <div class="play-button" onclick="playVideo(this)"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Ver más detalles del proyecto Mi Tracking">Ver Proyecto</a>
+                                    <a href="#" aria-label="Ver código del proyecto Mi Tracking">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="1">
+                            <div class="proyecto-content">
+                                <h3 data-es="MI FUEC" data-en="MI FUEC">MI FUEC</h3>
+                                <img src="assets/images/fuec/01.png" alt="Captura de pantalla del proyecto MI FUEC - Gestión de contratos de transporte">
+                                <p data-es="Aplicación web para la gestión de formatos de extracto de contrato único. El formato de extracto de contrato único es el documento de transporte." data-en="Web application for the management of unique contract extract formats. Unique Contract Extract Format is the transport document.">
+                                    Aplicación web para la gestión de formatos de extracto de contrato único. El formato de extracto de contrato único es el documento de transporte.
+                                </p>
+                                <p><strong>Technologies:</strong> Angular, Node.js, PostgreSQL, HTML, CSS</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('fuec')">
+                                        <img src="assets/images/fuec/02.png" alt="Interfaz principal MI FUEC">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('fuec')">
+                                        <img src="assets/images/fuec/03.png" alt="Formulario de contratos">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('fuec')">
+                                        <img src="assets/images/fuec/04.png" alt="Dashboard de gestión">
+                                    </div>
+                                </div>
+                                
+                                <!-- Video del proyecto -->
+                                <div class="video-container">
+                                    <video poster="assets/images/fuec/01.png">
+                                        <source src="assets/videos/fuec.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento video.
+                                    </video>
+                                    <div class="video-overlay">
+                                        <div class="play-button" onclick="playVideo(this)"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Ver más detalles del proyecto MI FUEC">Ver Proyecto</a>
+                                    <a href="#" aria-label="Ver código del proyecto MI FUEC">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="2">
+                            <div class="proyecto-content">
+                                <h3 data-es="Gordinho Defense" data-en="Gordinho Defense">Gordinho Defense</h3>
+                                <img src="assets/images/gordimPix/00.png" alt="Captura de pantalla del juego Gordinho Defense - Juego 3D Tower Defense">
+                                <p data-es="Un juego de defensa de torre 3D. Los enemigos se dirigen en un laberinto 3D generativo tratando de encontrar su camino. Es tu deber detenerlos!" data-en="A 3D Tower Defense game. Enemies swarm in a generative 3D maze trying to find their way out. It's your duty to stop them!">
+                                    Un juego de defensa de torre 3D. Los enemigos se dirigen en un laberinto 3D generativo tratando de encontrar su camino. Es tu deber detenerlos!
+                                </p>
+                                <p><strong>Technologies:</strong> TypeScript, Three.js, AWS, HTML, CSS</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('gordinho')">
+                                        <img src="assets/images/gordimPix/01.png" alt="Gameplay Gordinho Defense">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('gordinho')">
+                                        <img src="assets/images/gordimPix/02.png" alt="Construcción de torres">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('gordinho')">
+                                        <img src="assets/images/gordimPix/03.png" alt="Enemigos en el laberinto">
+                                    </div>
+                                </div>
+                                
+                                <!-- Video del proyecto -->
+                                <div class="video-container">
+                                    <video poster="assets/images/gordimPix/00.png">
+                                        <source src="assets/videos/gordinho.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento video.
+                                    </video>
+                                    <div class="video-overlay">
+                                        <div class="play-button" onclick="playVideo(this)"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="https://main.d2797vtjwvpw5j.amplifyapp.com/" target="_blank" aria-label="Jugar Gordinho Defense">Jugar Demo</a>
+                                    <a href="https://github.com/gabosoftape/ts-map" target="_blank" aria-label="Ver código en GitHub">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="3">
+                            <div class="proyecto-content">
+                                <h3 data-es="Enlist Web" data-en="Enlist Web">Enlist Web</h3>
+                                <img src="assets/images/enlist_web/01.png" alt="Captura de pantalla del proyecto Enlist Web - Sistema de gestión web">
+                                <p data-es="Sistema de gestión web basado en web para el seguimiento de inventario y recursos. Interfaz moderna con actualizaciones en tiempo real." data-en="Web-based management system for inventory and resource tracking. Modern interface with real-time updates.">
+                                    Sistema de gestión web basado en web para el seguimiento de inventario y recursos. Interfaz moderna con actualizaciones en tiempo real.
+                                </p>
+                                <p><strong>Technologies:</strong> React, Node.js, Express, MongoDB, Socket.io</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('enlist_web')">
+                                        <img src="assets/images/enlist_web/02.png" alt="Dashboard Enlist Web">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('enlist_web')">
+                                        <img src="assets/images/enlist_web/03.png" alt="Gestión de inventario">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('enlist_web')">
+                                        <img src="assets/images/enlist_web/04.png" alt="Reportes en tiempo real">
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Ver más detalles del proyecto Enlist Web">Ver Proyecto</a>
+                                    <a href="#" aria-label="Ver código del proyecto Enlist Web">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="4">
+                            <div class="proyecto-content">
+                                <h3 data-es="Enlist Android" data-en="Enlist Android">Enlist Android</h3>
+                                <img src="assets/images/enlist_android/01.png" alt="Captura de pantalla del proyecto Enlist Android - App móvil">
+                                <p data-es="Aplicación móvil para el seguimiento de inventario. Aplicación nativa de Android con capacidades de sincronización offline." data-en="Mobile application for inventory management. Native Android app with offline capabilities and sync.">
+                                    Aplicación móvil para el seguimiento de inventario. Aplicación nativa de Android con capacidades de sincronización offline.
+                                </p>
+                                <p><strong>Technologies:</strong> Java, Android SDK, SQLite, REST API</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('enlist_android')">
+                                        <img src="assets/images/enlist_android/02.png" alt="Interfaz móvil Enlist">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('enlist_android')">
+                                        <img src="assets/images/enlist_android/03.png" alt="Escaneo de códigos QR">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('enlist_android')">
+                                        <img src="assets/images/enlist_android/04.png" alt="Sincronización offline">
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Descargar Enlist Android">Descargar App</a>
+                                    <a href="#" aria-label="Ver código del proyecto Enlist Android">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="5">
+                            <div class="proyecto-content">
+                                <h3 data-es="D3 Data Visualization" data-en="D3 Data Visualization">D3 Data Visualization</h3>
+                                <img src="assets/images/d3Pix/01.png" alt="Captura de pantalla del proyecto D3 - Visualización de datos">
+                                <p data-es="Proyecto de visualización de datos interactiva usando D3.js. Gráficos interactivos y dashboard de análisis." data-en="Interactive data visualization project using D3.js. Real-time charts and analytics dashboard.">
+                                    Proyecto de visualización de datos interactiva usando D3.js. Gráficos interactivos y dashboard de análisis.
+                                </p>
+                                <p><strong>Technologies:</strong> D3.js, JavaScript, HTML5, CSS3, SVG</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('d3Pix')">
+                                        <img src="assets/images/d3Pix/02.png" alt="Gráficos interactivos D3">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('d3Pix')">
+                                        <img src="assets/images/d3Pix/00.png" alt="Dashboard de analytics">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('d3Pix')">
+                                        <img src="assets/images/d3Pix/01.png" alt="Visualización de datos en tiempo real">
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Ver demo del proyecto D3">Ver Demo</a>
+                                    <a href="#" aria-label="Ver código del proyecto D3">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="6">
+                            <div class="proyecto-content">
+                                <h3 data-es="Clicker Game" data-en="Clicker Game">Clicker Game</h3>
+                                <img src="assets/images/clicker/1.png" alt="Captura de pantalla del juego Clicker - Juego incremental">
+                                <p data-es="Juego incremental de clicker con sistema de progresión. Características de mejoras, logros y sistema de guardado." data-en="Incremental clicker game with progression system. Features upgrades, achievements, and save system.">
+                                    Juego incremental de clicker con sistema de progresión. Características de mejoras, logros y sistema de guardado.
+                                </p>
+                                <p><strong>Technologies:</strong> JavaScript, HTML5, CSS3, LocalStorage</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('clicker')">
+                                        <img src="assets/images/clicker/2.png" alt="Gameplay Clicker">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('clicker')">
+                                        <img src="assets/images/clicker/3.png" alt="Sistema de upgrades">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('clicker')">
+                                        <img src="assets/images/clicker/4.png" alt="Logros y estadísticas">
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Jugar Clicker Game">Jugar Demo</a>
+                                    <a href="#" aria-label="Ver código del juego Clicker">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="7">
+                            <div class="proyecto-content">
+                                <h3 data-es="Catabum" data-en="Catabum">Catabum</h3>
+                                <img src="assets/images/catabum/1.png" alt="Captura de pantalla del proyecto Catabum - Plataforma de contenido">
+                                <p data-es="Plataforma de gestión de contenido con contenido generado por usuarios. Características sociales y soporte multimedia." data-en="Content management platform with user-generated content. Social features and multimedia support.">
+                                    Plataforma de gestión de contenido con contenido generado por usuarios. Características sociales y soporte multimedia.
+                                </p>
+                                <p><strong>Technologies:</strong> React, Node.js, MongoDB, AWS S3, Socket.io</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('catabum')">
+                                        <img src="assets/images/catabum/2.png" alt="Feed de contenido Catabum">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('catabum')">
+                                        <img src="assets/images/catabum/3.png" alt="Perfil de usuario">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('catabum')">
+                                        <img src="assets/images/catabum/4.png" alt="Subida de contenido multimedia">
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Visitar Catabum">Visitar Plataforma</a>
+                                    <a href="#" aria-label="Ver código del proyecto Catabum">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-slide" data-project="8">
+                            <div class="proyecto-content">
+                                <h3 data-es="Lacos" data-en="Lacos">Lacos</h3>
+                                <img src="assets/images/lacosPix/01.png" alt="Captura de pantalla del proyecto Lacos - Sistema de gestión">
+                                <p data-es="Sistema de gestión empresarial con informes y análisis avanzados. Arquitectura multi-módulo." data-en="Enterprise management system with advanced reporting and analytics. Multi-module architecture.">
+                                    Sistema de gestión empresarial con informes y análisis avanzados. Arquitectura multi-módulo.
+                                </p>
+                                <p><strong>Technologies:</strong> Angular, TypeScript, .NET Core, SQL Server, Azure</p>
+                                
+                                <!-- Galería de imágenes -->
+                                <div class="gallery">
+                                    <div class="gallery-item" onclick="openGallery('lacosPix')">
+                                        <img src="assets/images/lacosPix/02.png" alt="Dashboard Lacos">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('lacosPix')">
+                                        <img src="assets/images/lacosPix/03.png" alt="Reportes avanzados">
+                                    </div>
+                                    <div class="gallery-item" onclick="openGallery('lacosPix')">
+                                        <img src="assets/images/lacosPix/04.png" alt="Gestión de módulos">
+                                    </div>
+                                </div>
+                                
+                                <div class="proyecto-links">
+                                    <a href="#" aria-label="Ver más detalles del proyecto Lacos">Ver Proyecto</a>
+                                    <a href="#" aria-label="Ver código del proyecto Lacos">Ver Código</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Controles de navegación del slider -->
+                    <div class="projects-slider-controls">
+                        <button class="slider-nav-btn prev" id="projectPrevBtn" aria-label="Proyecto anterior">
+                            <span>‹</span>
+                        </button>
+                        <div class="slider-indicators" id="projectIndicators">
+                            <!-- Los indicadores se generarán dinámicamente -->
+                        </div>
+                        <button class="slider-nav-btn next" id="projectNextBtn" aria-label="Siguiente proyecto">
+                            <span>›</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <p class="description" data-es="Como se mencionó anteriormente, simplemente me encanta construir cosas con código! Por eso mi github tiene más de 250 repositorios! En cada uno de ellos, exploro nuevas herramientas e ideas, siempre con el objetivo de empujar mis límites aún más." data-en="As mentioned above, I simply LOVE to build things with code! That's why my github has over 250 repositories! In each of them I explore new tools and ideas, always with the goal of pushing my limits even further.">
+                    Como se mencionó anteriormente, simplemente me encanta construir cosas con código! Por eso mi github tiene más de 250 repositorios! En cada uno de ellos, exploro nuevas herramientas e ideas, siempre con el objetivo de empujar mis límites aún más.
+                </p>
+                
+                <div class="slide-indicator">
+                    <span>03</span>
+                    <div class="indicator-line"></div>
+                    <span data-es="Proyectos" data-en="Projects">Proyectos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Contacto -->
+        <section class="slide" id="slide-contacto" aria-labelledby="titulo-contacto">
+            <div class="slide-content">
+                <h2 id="titulo-contacto" data-es="Ponte en contacto conmigo" data-en="Reach out to me">Ponte en contacto conmigo</h2>
+                <p data-es="O simplemente ve a la página de contactos y envíame un mensaje. No dudes en escribirme lo que tengas en la cabeza! Me encantará responder :D" data-en="Or simply go to the contacts page and send me a message. Please don't hesitate, just write me whatever you have in mind! I'll be pleased to respond :D">
+                    O simplemente ve a la página de contactos y envíame un mensaje. No dudes en escribirme lo que tengas en la cabeza! Me encantará responder :D
+                </p>
+                
+                <div class="contact-container">
+                    <form role="form" aria-labelledby="titulo-contacto">
+                        <fieldset>
+                            <legend data-es="Información de Contacto" data-en="Contact Information">Información de Contacto</legend>
+                            
+                            <div class="form-group">
+                                <label for="nombre" data-es="Nombre completo:" data-en="Full name:">Nombre completo:</label>
+                                <input type="text" id="nombre" name="nombre" required aria-required="true" data-es-placeholder="Ingresa tu nombre completo" data-en-placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-es="Correo electrónico:" data-en="Email:">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" required aria-required="true" data-es-placeholder="tu@email.com" data-en-placeholder="your@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto" data-es="Asunto:" data-en="Subject:">Asunto:</label>
+                                <input type="text" id="asunto" name="asunto" required aria-required="true" data-es-placeholder="¿En qué puedo ayudarte?" data-en-placeholder="How can I help you?">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje" data-es="Mensaje:" data-en="Message:">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true" data-es-placeholder="Escribe tu mensaje aquí..." data-en-placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" aria-label="Enviar formulario de contacto" data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</button>
+                        </fieldset>
+                    </form>
+                    
+                    <aside class="contact-info">
+                        <h3 data-es="Ubicación Actual" data-en="Current Location">Ubicación Actual</h3>
+                        <ul>
+                            <li><strong>📍 Ubicación:</strong> Bogotá DC - Colombia</li>
+                            <li><strong>💼 Disponibilidad:</strong> Full-time</li>
+                            <li><strong>🌍 Idiomas:</strong> Español, Inglés</li>
+                            <li><strong>📅 Experiencia:</strong> Desde 2012</li>
+                        </ul>
+                        
+                        <h4 data-es="Tecnologías con las que he trabajado" data-en="Technologies I've worked with">Tecnologías con las que he trabajado</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Nest.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Symfony</span>
+                            <span class="skill-tag">Golang</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Terragrunt</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">Three.js</span>
+                            <span class="skill-tag">WebGL</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                        
+                        <h4 data-es="Conecta conmigo" data-en="Connect with me">Conecta conmigo</h4>
+                        <ul>
+                            <li><a href="https://github.com/gabosoftape" target="_blank" aria-label="Visitar mi perfil de GitHub">GitHub</a></li>
+                            <li><a href="https://arpadine.com" target="_blank" aria-label="Ver mi CV">My CV</a></li>
+                            <li><a href="mailto:contact@example.com" aria-label="Enviar email">Email</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                
+                <div class="slide-indicator">
+                    <span>04</span>
+                    <div class="indicator-line"></div>
+                    <span data-es="Contacto" data-en="Contact">Contact</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de galería -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeGallery()">&times;</button>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicator" id="scrollIndicator" role="status" aria-live="polite">
+        <div class="scroll-arrow" aria-hidden="true"></div>
+        <span data-es="Desplázate" data-en="Scroll">Desplázate</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
