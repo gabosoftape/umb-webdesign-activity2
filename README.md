@@ -117,6 +117,9 @@ repo/
 - JavaScript habilitado
 - Conexión a internet para cargar recursos externos (GSAP, CDN)
 
+### Demo en Línea
+Puedes ver el portafolio en funcionamiento en: [https://dumarpabon.netlify.app/](https://dumarpabon.netlify.app/)
+
 ### Instalación Local
 
 #### Opción 1: Abrir directamente
