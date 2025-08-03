@@ -10,6 +10,17 @@ let hasInteracted = false; // Control de interacción del usuario
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
+    // Mostrar preloader
+    const preloader = document.getElementById('preloader');
+    
+    // Simular tiempo de carga
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }, 2000);
+    
     initializeSlides();
     setupEventListeners();
     setupLanguageSelector();
@@ -38,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add event listeners
         setupProjectSliderEvents();
     }
+    
+    // Inicializar el slider de proyectos
+    initializeProjectsSlider();
 
     function createProjectIndicators() {
         const indicatorsContainer = document.getElementById('projectIndicators');
@@ -219,6 +233,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 isDragging = false;
             });
         }
+        
+        // Manejar scroll dentro de los cards
+        projectSlides.forEach(slide => {
+            const content = slide.querySelector('.proyecto-content');
+            if (content) {
+                content.addEventListener('scroll', (e) => {
+                    // Prevenir que el scroll del card interfiera con la navegación
+                    e.stopPropagation();
+                });
+            }
+        });
     }
 
     // Initialize projects slider when DOM is loaded
