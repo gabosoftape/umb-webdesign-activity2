@@ -170,18 +170,24 @@
             <div class="slide-content">
                 <h2 id="titulo-proyectos" data-es="Revisa algunos de mis trabajos" data-en="Check out some of my work">Revisa algunos de mis trabajos</h2>
                 
-                <p class="description" data-es="Aprendiendo" data-en="Learning">
-                    <span class="code">&nbsp;==&nbsp;</span>
-                    <span data-es="Descubrimiento" data-en="Discovery">Descubrimiento</span>
-                    <span class="code">&nbsp;&amp;&amp;&nbsp;</span>
-                    <span data-es="Diversión!" data-en="Fun!">Diversión!</span>
-                </p>
+                <!-- Contenido inicial de proyectos -->
+                <div class="projects-intro" id="projectsIntro">
+                    <p class="description" data-es="Aprendiendo" data-en="Learning">
+                        <span class="code">&nbsp;==&nbsp;</span>
+                        <span data-es="Descubrimiento" data-en="Discovery">Descubrimiento</span>
+                        <span class="code">&nbsp;&amp;&amp;&nbsp;</span>
+                        <span data-es="Diversión!" data-en="Fun!">Diversión!</span>
+                    </p>
+                    
+                    <p class="description" data-es="La práctica es la mejor manera de dominar una habilidad, y no hay forma de ser bueno en algo si no te metes en la suciedad. Por eso me considero afortunado: simplemente me encanta practicar! Para mí, nada es más emocionante que iniciar un nuevo proyecto y jugar con nuevas tecnologías y herramientas." data-en="Practicing is the best way to master a skill, and there's no way to get good at something if you don't get your hands dirty. That's why I consider myself lucky: I just love to practice! For me, nothing is more exciting than to start a new project and to tinker around with new technologies and tools.">
+                        La práctica es la mejor manera de dominar una habilidad, y no hay forma de ser bueno en algo si no te metes en la suciedad. Por eso me considero afortunado: simplemente me encanta practicar! Para mí, nada es más emocionante que iniciar un nuevo proyecto y jugar con nuevas tecnologías y herramientas.
+                    </p>
+                    
+                    <button class="ver-proyectos-btn" id="verProyectosBtn" data-es="Ver Proyectos" data-en="View Projects">Ver Proyectos</button>
+                </div>
                 
-                <p class="description" data-es="La práctica es la mejor manera de dominar una habilidad, y no hay forma de ser bueno en algo si no te metes en la suciedad. Por eso me considero afortunado: simplemente me encanta practicar! Para mí, nada es más emocionante que iniciar un nuevo proyecto y jugar con nuevas tecnologías y herramientas." data-en="Practicing is the best way to master a skill, and there's no way to get good at something if you don't get your hands dirty. That's why I consider myself lucky: I just love to practice! For me, nothing is more exciting than to start a new project and to tinker around with new technologies and tools.">
-                    La práctica es la mejor manera de dominar una habilidad, y no hay forma de ser bueno en algo si no te metes en la suciedad. Por eso me considero afortunado: simplemente me encanta practicar! Para mí, nada es más emocionante que iniciar un nuevo proyecto y jugar con nuevas tecnologías y herramientas.
-                </p>
-                
-                <div class="projects-slider-container">
+                <!-- Contenedor del slider de proyectos (inicialmente oculto) -->
+                <div class="projects-slider-container" id="projectsSliderContainer" style="display: none;">
                     <div class="projects-slider" id="projectsSlider">
                         <article class="proyecto-slide active" data-project="0">
                             <div class="proyecto-content">
@@ -490,11 +496,12 @@
                             <span>›</span>
                         </button>
                     </div>
+                    
+                    <!-- Texto final sutil debajo del slider -->
+                    <p class="projects-conclusion" data-es="Como se mencionó anteriormente, simplemente me encanta construir cosas con código! Por eso mi github tiene más de 250 repositorios! En cada uno de ellos, exploro nuevas herramientas e ideas, siempre con el objetivo de empujar mis límites aún más." data-en="As mentioned above, I simply LOVE to build things with code! That's why my github has over 250 repositories! In each of them I explore new tools and ideas, always with the goal of pushing my limits even further.">
+                        Como se mencionó anteriormente, simplemente me encanta construir cosas con código! Por eso mi github tiene más de 250 repositorios! En cada uno de ellos, exploro nuevas herramientas e ideas, siempre con el objetivo de empujar mis límites aún más.
+                    </p>
                 </div>
-                
-                <p class="description" data-es="Como se mencionó anteriormente, simplemente me encanta construir cosas con código! Por eso mi github tiene más de 250 repositorios! En cada uno de ellos, exploro nuevas herramientas e ideas, siempre con el objetivo de empujar mis límites aún más." data-en="As mentioned above, I simply LOVE to build things with code! That's why my github has over 250 repositories! In each of them I explore new tools and ideas, always with the goal of pushing my limits even further.">
-                    Como se mencionó anteriormente, simplemente me encanta construir cosas con código! Por eso mi github tiene más de 250 repositorios! En cada uno de ellos, exploro nuevas herramientas e ideas, siempre con el objetivo de empujar mis límites aún más.
-                </p>
                 
                 <div class="slide-indicator">
                     <span>03</span>

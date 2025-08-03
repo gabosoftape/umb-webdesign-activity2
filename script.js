@@ -1025,6 +1025,41 @@ window.addEventListener('load', function() {
     }
 });
 
+// Funcionalidad del botón "Ver Proyectos"
+function setupProjectsToggle() {
+    const verProyectosBtn = document.getElementById('verProyectosBtn');
+    const projectsIntro = document.getElementById('projectsIntro');
+    const projectsSliderContainer = document.getElementById('projectsSliderContainer');
+    
+    if (verProyectosBtn && projectsIntro && projectsSliderContainer) {
+        verProyectosBtn.addEventListener('click', function() {
+            // Ocultar la introducción con animación
+            projectsIntro.style.opacity = '0';
+            projectsIntro.style.transform = 'translateY(-20px)';
+            
+            setTimeout(() => {
+                projectsIntro.style.display = 'none';
+                
+                // Mostrar el slider con animación
+                projectsSliderContainer.style.display = 'block';
+                projectsSliderContainer.style.opacity = '0';
+                projectsSliderContainer.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    projectsSliderContainer.style.opacity = '1';
+                    projectsSliderContainer.style.transform = 'translateY(0)';
+                    projectsSliderContainer.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                }, 100);
+            }, 300);
+        });
+    }
+}
+
+// Inicializar la funcionalidad del botón "Ver Proyectos"
+document.addEventListener('DOMContentLoaded', function() {
+    setupProjectsToggle();
+});
+
 // Log de éxito
 console.log('🎉 Sistema de slides cargado con éxito!');
 console.log(`📊 Total de slides: ${totalSlides}`);

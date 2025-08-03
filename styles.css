@@ -776,6 +776,17 @@ button[type="submit"]:hover {
     .indicator-line {
         width: 30px;
     }
+    
+    .ver-proyectos-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .projects-conclusion {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        margin-top: 7rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -807,6 +818,17 @@ button[type="submit"]:hover {
     
     .scroll-indicator {
         display: none;
+    }
+    
+    .ver-proyectos-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .projects-conclusion {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+        margin-top: 0.8rem;
     }
 }
 
@@ -1137,15 +1159,76 @@ textarea:focus {
     outline-offset: 4px;
 } 
 
+/* Estilos para la introducción de proyectos */
+.projects-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInUp 1s ease both;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ver-proyectos-btn {
+    background: linear-gradient(135deg, var(--accent-color), #0099cc);
+    color: var(--text-color);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all var(--transition-medium);
+    box-shadow: var(--shadow-medium);
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.ver-proyectos-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.ver-proyectos-btn:hover::before {
+    left: 100%;
+}
+
+.ver-proyectos-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-heavy);
+    background: linear-gradient(135deg, #0099cc, var(--accent-color));
+}
+
+.ver-proyectos-btn:active {
+    transform: translateY(0);
+}
+
+/* Texto de conclusión de proyectos */
+.projects-conclusion {
+    text-align: center;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+    line-height: 1.6;
+    font-style: italic;
+    animation: fadeInUp 1s ease 0.5s both;
+}
+
 /* Projects Slider - 3D Carousel Style */
 .projects-slider-container {
     position: relative;
     width: 100%;
     height: 50rem;
-    margin: 2rem 0;
+    margin: 1rem 0; /* Reducido de 2rem a 1rem */
     perspective: 1000px;
     perspective-origin: center;
-    padding-bottom: 120px; /* Espacio para los controles */
+    padding-bottom: 80px; /* Reducido de 120px a 80px */
 }
 
 .projects-slider {
@@ -1310,7 +1393,7 @@ textarea:focus {
 
 .proyecto-content .gallery-item img {
     width: 100%;
-    height: 80px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
